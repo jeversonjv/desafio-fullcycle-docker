@@ -29,7 +29,7 @@ const createTable = async () => {
 
 const createPerson = async () => {
   return new Promise((resolve, reject) => {
-	const name = faker.name.findName().replace(/\'/g, "");
+	  const name = faker.name.findName().replace(/\'/g, "");
     const sql = `
       INSERT INTO people (name) VALUES ('${name}');
     `;
